@@ -22,29 +22,42 @@
     <style>
         /* Mobile adjustments */
         @media (max-width: 768px) {
-            .accomodation_area .row .col-lg-3, 
-            .latest_blog_area .row .col-lg-4 {
+            .accomodation_area .row .col-6 {
                 flex: 0 0 50%;
                 max-width: 50%;
             }
+    
+            .hotel_img img {
+                width: 100%;
+                height: auto; /* Maintain aspect ratio */
+            }
+    
+            .accomodation_item .btn {
+                font-size: 12px; /* Smaller button text */
+                padding: 5px 10px; /* Adjust button size */
+            }
+    
+            .accomodation_item h4 {
+                font-size: 16px; /* Slightly smaller headings */
+            }
         }
-
-        /* Navbar adjustments */
-        .navbar-brand span {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .navbar-brand img {
-            display: none;
-        }
-
-        .sticky .navbar-brand img {
-            display: block;
-        }
-
-        .sticky .navbar-brand span {
-            display: none;
+    
+        /* Large screen adjustments */
+        @media (min-width: 769px) {
+            .accomodation_area .row .col-lg-3 {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+    
+            .hotel_img img {
+                width: 100%;
+                height: auto; /* Maintain aspect ratio */
+            }
+    
+            .accomodation_item .btn {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
@@ -54,8 +67,8 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand logo_h" href="index.html">
-                    <img src="image/rifle/logo.jpg" alt="Ajanta Rifle Club" height="40" width="40">
-                    <span>Ajanta Rifles Club</span>
+                    <img src="image/rifle/logo.jpg" alt="Ajanta Rifle Club" height="120" width="100">
+                    <span><h1>Ajanta Rifles Club</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
@@ -100,41 +113,41 @@
             <p>Explore our wide range of rifle shooting programs tailored to all skill levels.</p>
         </div>
         <div class="row mb_30">
-            <div class="col-6 col-sm-6 mb-4">
+            <div class="col-6 col-lg-3 mb-4">
                 <div class="accomodation_item text-center" data-aos="fade-up">
                     <div class="hotel_img">
                         <img src="image/room1.jpg" alt="" class="img-fluid">
-                        <a href="#" class="btn theme_btn button_hover">Learn More</a>
+                        <!-- <a href="#" class="btn theme_btn button_hover">Learn More</a> -->
                     </div>
                     <a href="#"><h4 class="sec_h4">Beginner's Course</h4></a>
                     <h5>Starts at $100</h5>
                 </div>
             </div>
-            <div class="col-6 col-sm-6 mb-4">
+            <div class="col-6 col-lg-3 mb-4">
                 <div class="accomodation_item text-center" data-aos="fade-up">
                     <div class="hotel_img">
                         <img src="image/room2.jpg" alt="" class="img-fluid">
-                        <a href="#" class="btn theme_btn button_hover">Learn More</a>
+                        <!-- <a href="#" class="btn theme_btn button_hover">Learn More</a> -->
                     </div>
                     <a href="#"><h4 class="sec_h4">Advanced Training</h4></a>
                     <h5>Starts at $200</h5>
                 </div>
             </div>
-            <div class="col-6 col-sm-6 mb-4">
+            <div class="col-6 col-lg-3 mb-4">
                 <div class="accomodation_item text-center" data-aos="fade-up">
                     <div class="hotel_img">
                         <img src="image/room3.jpg" alt="" class="img-fluid">
-                        <a href="#" class="btn theme_btn button_hover">Learn More</a>
+                        <!-- <a href="#" class="btn theme_btn button_hover">Learn More</a> -->
                     </div>
                     <a href="#"><h4 class="sec_h4">Competition Prep</h4></a>
                     <h5>Starts at $300</h5>
                 </div>
             </div>
-            <div class="col-6 col-sm-6 mb-4">
+            <div class="col-6 col-lg-3 mb-4">
                 <div class="accomodation_item text-center" data-aos="fade-up">
                     <div class="hotel_img">
                         <img src="image/room4.jpg" alt="" class="img-fluid">
-                        <a href="#" class="btn theme_btn button_hover">Learn More</a>
+                        <!-- <a href="#" class="btn theme_btn button_hover">Learn More</a> -->
                     </div>
                     <a href="#"><h4 class="sec_h4">Safety & Handling</h4></a>
                     <h5>Starts at $80</h5>
