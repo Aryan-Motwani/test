@@ -1,54 +1,80 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="image/favicon.png" type="image/png">
-        <title>Ajanta Rifle Club</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="image/favicon.png" type="image/png">
+    <title>Ajanta Rifles Club</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
-    <body>
-        <!--================Header Area =================-->
-        <header class="header_area">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html">
-                        <!-- <img src="image/rifle_club_logo.png" alt="Ajanta Rifle Club"> -->
-                        <img src="image/rifle/logo.jpg" alt="Ajanta Rifle Club" height="200" width="150">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="training.html">Training Programs</a></li>
-                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div> 
-                </nav>
-            </div>
-        </header>
-        <!--================Header Area =================-->
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .accomodation_area .row .col-lg-3, 
+            .latest_blog_area .row .col-lg-4 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Navbar adjustments */
+        .navbar-brand span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar-brand img {
+            display: none;
+        }
+
+        .sticky .navbar-brand img {
+            display: block;
+        }
+
+        .sticky .navbar-brand span {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!--================Header Area =================-->
+    <header class="header_area">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand logo_h" href="index.html">
+                    <img src="image/rifle/logo.jpg" alt="Ajanta Rifle Club" height="40" width="40">
+                    <span>Ajanta Rifles Club</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="training.html">Training Programs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--================Header Area =================-->
         
         <!--================Banner Area =================-->
         <section class="banner_area">
@@ -66,58 +92,59 @@
         </section>
         <!--================Banner Area =================-->
         
-        <!--================ Training Programs Area =================-->
-        <section class="accomodation_area section_gap">
-            <div class="container">
-                <div class="section_title text-center">
-                    <h2 class="title_color">Training Programs</h2>
-                    <p>Explore our wide range of rifle shooting programs tailored to all skill levels.</p>
-                </div>
-                <div class="row mb_30">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="accomodation_item text-center" data-aos="fade-up">
-                            <div class="hotel_img">
-                                <img src="image/room1.jpg" alt="">
-                                <a href="#" class="btn theme_btn button_hover">Learn More</a>
-                            </div>
-                            <a href="#"><h4 class="sec_h4">Beginner's Course</h4></a>
-                            <h5>Starts at $100</h5>
-                        </div>
+            <!--================ Training Programs Area =================-->
+<section class="accomodation_area section_gap">
+    <div class="container">
+        <div class="section_title text-center">
+            <h2 class="title_color">Training Programs</h2>
+            <p>Explore our wide range of rifle shooting programs tailored to all skill levels.</p>
+        </div>
+        <div class="row mb_30">
+            <div class="col-6 col-sm-6 mb-4">
+                <div class="accomodation_item text-center" data-aos="fade-up">
+                    <div class="hotel_img">
+                        <img src="image/room1.jpg" alt="" class="img-fluid">
+                        <a href="#" class="btn theme_btn button_hover">Learn More</a>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="accomodation_item text-center" data-aos="fade-up">
-                            <div class="hotel_img">
-                                <img src="image/room2.jpg" alt="">
-                                <a href="#" class="btn theme_btn button_hover">Learn More</a>
-                            </div>
-                            <a href="#"><h4 class="sec_h4">Advanced Training</h4></a>
-                            <h5>Starts at $200</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="accomodation_item text-center" data-aos="fade-up">
-                            <div class="hotel_img">
-                                <img src="image/room3.jpg" alt="">
-                                <a href="#" class="btn theme_btn button_hover">Learn More</a>
-                            </div>
-                            <a href="#"><h4 class="sec_h4">Competition Prep</h4></a>
-                            <h5>Starts at $300</h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="accomodation_item text-center" data-aos="fade-up">
-                            <div class="hotel_img">
-                                <img src="image/room4.jpg" alt="">
-                                <a href="#" class="btn theme_btn button_hover">Learn More</a>
-                            </div>
-                            <a href="#"><h4 class="sec_h4">Safety & Handling</h4></a>
-                            <h5>Starts at $80</h5>
-                        </div>
-                    </div>
+                    <a href="#"><h4 class="sec_h4">Beginner's Course</h4></a>
+                    <h5>Starts at $100</h5>
                 </div>
             </div>
-        </section>
-        <!--================ Training Programs Area =================-->
+            <div class="col-6 col-sm-6 mb-4">
+                <div class="accomodation_item text-center" data-aos="fade-up">
+                    <div class="hotel_img">
+                        <img src="image/room2.jpg" alt="" class="img-fluid">
+                        <a href="#" class="btn theme_btn button_hover">Learn More</a>
+                    </div>
+                    <a href="#"><h4 class="sec_h4">Advanced Training</h4></a>
+                    <h5>Starts at $200</h5>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 mb-4">
+                <div class="accomodation_item text-center" data-aos="fade-up">
+                    <div class="hotel_img">
+                        <img src="image/room3.jpg" alt="" class="img-fluid">
+                        <a href="#" class="btn theme_btn button_hover">Learn More</a>
+                    </div>
+                    <a href="#"><h4 class="sec_h4">Competition Prep</h4></a>
+                    <h5>Starts at $300</h5>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 mb-4">
+                <div class="accomodation_item text-center" data-aos="fade-up">
+                    <div class="hotel_img">
+                        <img src="image/room4.jpg" alt="" class="img-fluid">
+                        <a href="#" class="btn theme_btn button_hover">Learn More</a>
+                    </div>
+                    <a href="#"><h4 class="sec_h4">Safety & Handling</h4></a>
+                    <h5>Starts at $80</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ Training Programs Area =================-->
+
         
         <!--================ Facilities Area  =================-->
         <section class="facilities_area section_gap">
@@ -217,54 +244,43 @@
 </section>
 <!--================ Testimonial Area =================-->
 
-<!--================ Latest Blog Area =================-->
-<section class="latest_blog_area section_gap">
-    <div class="container">
-        <div class="section_title text-center">
-            <h2 class="title_color">Latest Updates</h2>
-            <p>Explore tips, news, and updates from the world of rifle shooting.</p>
-        </div>
-        <div class="row mb_30">
-            <div class="col-lg-4 col-md-6" data-aos="flip-right">
-                <div class="single-recent-blog-post">
-                    <div class="thumb">
-                        <img class="img-fluid" src="image/blog/blog-1.jpg" alt="blog post">
-                    </div>
-                    <div class="details">
-                        <a href="#"><h4 class="sec_h4">Top Tips for Sharpshooters</h4></a>
-                        <p>Discover expert advice to enhance your shooting precision and confidence.</p>
-                        <h6 class="date title_color">1st December, 2024</h6>
-                    </div>
-                </div>
+    <!--================ Latest Blog Area =================-->
+    <section class="latest_blog_area section_gap">
+        <div class="container">
+            <div class="section_title text-center">
+                <h2 class="title_color">Latest Updates</h2>
+                <p>Explore tips, news, and updates from the world of rifle shooting.</p>
             </div>
-            <div class="col-lg-4 col-md-6" data-aos="flip-right">
-                <div class="single-recent-blog-post">
-                    <div class="thumb">
-                        <img class="img-fluid" src="image/blog/blog-2.jpg" alt="blog post">
-                    </div>
-                    <div class="details">
-                        <a href="#"><h4 class="sec_h4">Benefits of Joining a Shooting Club</h4></a>
-                        <p>Understand how rifle clubs contribute to your growth as a professional shooter.</p>
-                        <h6 class="date title_color">20th November, 2024</h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6" data-aos="flip-right">
-                <div class="single-recent-blog-post">
-                    <div class="thumb">
-                        <img class="img-fluid" src="image/blog/blog-3.jpg" alt="blog post">
-                    </div>
-                    <div class="details">
-                        <a href="#"><h4 class="sec_h4">Upcoming Competitions</h4></a>
-                        <p>Stay updated with upcoming shooting events and competitions near you.</p>
-                        <h6 class="date title_color">15th November, 2024</h6>
+            <div class="row mb_30">
+                <div class="col-6 col-sm-6" data-aos="flip-right">
+                    <div class="single-recent-blog-post">
+                        <div class="thumb">
+                            <img class="img-fluid" src="image/blog/blog-1.jpg" alt="blog post">
+                        </div>
+                        <div class="details">
+                            <a href="#"><h4 class="sec_h4">Top Tips for Sharpshooters</h4></a>
+                            <p>Discover expert advice to enhance your shooting precision and confidence.</p>
+                            <h6 class="date title_color">1st December, 2024</h6>
+                        </div>
                     </div>
                 </div>
+                <div class="col-6 col-sm-6" data-aos="flip-right">
+                    <div class="single-recent-blog-post">
+                        <div class="thumb">
+                            <img class="img-fluid" src="image/blog/blog-2.jpg" alt="blog post">
+                        </div>
+                        <div class="details">
+                            <a href="#"><h4 class="sec_h4">Benefits of Joining a Shooting Club</h4></a>
+                            <p>Understand how rifle clubs contribute to your growth as a professional shooter.</p>
+                            <h6 class="date title_color">20th November, 2024</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other items -->
             </div>
         </div>
-    </div>
-</section>
-<!--================ Latest Blog Area =================-->
+    </section>
+    <!--================ Latest Blog Area =================-->
 
 <!--================ Footer Area =================-->	
 <footer class="footer-area section_gap">
